@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>qwiple</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="/dist/spectre.css">
+
+</head>
+
+<body ng-app="qwiple" ng-controller="ApplicationController">
+
+
+    <div class="container clearfix">
+        <div class="float-left">
+            qwiple
+        </div>
+        <div class="float-right">
+            <ul class="tab tab-block">
+
+                <li class="tab-item">
+                    <a ui-sref="popular" ui-sref-active="active">popular</a>
+                </li>
+                <li class="tab-item">
+                    <a ui-sref="newest" ui-sref-active="active">newest</a>
+                </li>
+                <li class="tab-item">
+                    <a ui-sref="create" ui-sref-active="active">say something</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <!--<div class="clearfix"></div>-->
+
+    <div class="container ">
+        <ui-view></ui-view>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="//npmcdn.com/angular-ui-router@1.0.0-beta.2/release/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.0-beta.6/angular-moment.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+    <script src="/dist/site-scripts.js"></script>
+
+</body>
+
+</html>
